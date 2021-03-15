@@ -1,5 +1,6 @@
 .client {
-  @include section-padding();
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .client__title {
@@ -18,18 +19,13 @@
   list-style: none;
   height: 90px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   margin: 0;
-}
 
 .client__logo:not(:last-child) {
   margin-right: 30px;
-}
-
-.client__logo {
-  width: 170px;
-  height: 90px;
 }
 
 .client__icon {
