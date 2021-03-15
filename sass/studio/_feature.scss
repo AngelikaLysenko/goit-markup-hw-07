@@ -4,7 +4,8 @@
 }
 
 .container .feature {
-  @include flex-center();
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
 
