@@ -1,0 +1,9 @@
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin section-padding(){
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
