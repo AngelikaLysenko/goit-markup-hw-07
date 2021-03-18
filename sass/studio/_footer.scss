@@ -61,7 +61,8 @@
 .footer__list-icon {
   width: 206px;
   border-radius: 50%;
-  @include flex-center();
+  display: flex;
+  justify-content: center;
   text-align: center;
   flex-basis: calc(100% / 4 - 10px);
   padding: 0;
@@ -104,7 +105,8 @@
 }
 
 .footer__form {
-  @include flex-center();
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: 570px;
   height: 86px;

@@ -135,9 +135,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: auto;
 }
 
@@ -148,6 +148,12 @@ body {
 
 .container-header__mail {
   margin-right: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--paragraf-text-color);
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
@@ -190,7 +196,6 @@ body {
   text-transform: uppercase;
   max-width: 700px;
   margin-bottom: 30px;
-  letter-spacing: 0.06em;
 }
 
 .hero__button-primary {
@@ -214,8 +219,8 @@ body {
 }
 
 .modal {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 528px;
+  max-height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -238,7 +243,6 @@ body {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 12px;
 }
@@ -272,8 +276,7 @@ body {
   margin-top: 6px;
 }
 
-.button-close:hover,
-.button-close:focus {
+.modal__icon-close:hover, .modal__icon-close:focus {
   color: var(--accent-color);
 }
 
@@ -490,7 +493,6 @@ body {
 
 .feature__img {
   height: 120px;
-  background-color: #f5f4fa;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,7 +503,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #e5e5e5;
+  background-color: #F5F4FA;
 }
 
 .feature__description {
@@ -566,7 +568,7 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #e5e5e5;
+  background-color: #F5F4FA;
 }
 
 .team__title {
@@ -680,27 +682,37 @@ body {
 .client__brand {
   list-style: none;
   height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin: 0;
 }
 
-.client__logo:not(:last-child) {
+.client__brand .client__logo:not(:last-child) {
   margin-right: 30px;
 }
 
-.client__icon {
+.client__brand .client__icon {
   fill: currentColor;
 }
 
-.client__link {
+.client__brand .client__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--paragraf-text-color);
   border: 1px solid var(--paragraf-text-color);
   border-radius: 4px;
@@ -708,13 +720,13 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.client__link:hover, .client__link:focus {
+.client__brand .client__link:hover, .client__brand .client__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.client__brand,
-.client__logo {
+.client__brand .client__brand,
+.client__brand .client__logo {
   padding: 0;
   margin: 0;
   -ms-flex-preferred-size: calc(100% / 6 - var(--nav-list-gap));
@@ -895,7 +907,7 @@ body {
 }
 
 .container-header {
-  max-width: 1200px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -920,13 +932,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   border-radius: 30px;
   padding-bottom: 56px;
